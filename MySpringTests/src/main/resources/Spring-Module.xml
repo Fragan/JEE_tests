@@ -1,0 +1,31 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+ 
+ 
+ 	<aop:aspectj-autoproxy/>
+ 	
+ 	
+ 	<!-- helloword -->
+ 
+	<bean id="helloBean" class="fr.fragan.helloword.HelloWorld">
+		<property name="name" value="MyName :)" />
+	</bean>
+	
+	<bean id="helloBeanAspect" class="fr.fragan.helloword.HelloWordAspect" />
+	
+	
+	<!-- helloclasses -->
+	
+	<bean id="personGA" class="fr.fragan.helloclasses.Person">
+		<property name="firstname" value="George" />
+		<property name="lastname" value="ABITBOL" />
+		<property name="age" value="26" />
+	</bean>
+	
+	<bean id="paopGA" class="fr.fragan.helloclasses.PerformActionOnPerson">
+	</bean>
+ 
+</beans>

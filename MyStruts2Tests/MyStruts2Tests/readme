@@ -1,0 +1,21 @@
+Struts 2 :
+
+Configuration d'un projet mavan Struts2 :
+Cf. http://struts.apache.org/release/2.3.x/docs/struts-2-maven-archetypes.html pour des détails.
+
+Commande $ mvn archetype:generate -B \
+                       -DgroupId=fr.fragan \
+                       -DartifactId=MyStruts2Tests \
+                       -DarchetypeGroupId=org.apache.struts \
+                       -DarchetypeArtifactId=struts2-archetype-blank \
+                       -DarchetypeVersion=<version>
+
+version : http://mvnrepository.com/artifact/org.apache.struts/struts2-core
+
+
+
+
+
+Tuto :
+http://www.jmdoudoux.fr/java/dej/chap-struts.htm (cours synthétique)
+http://www.mkyong.com/struts2/struts-2-hello-world-example/
